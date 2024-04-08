@@ -21,10 +21,19 @@
         <li>Two</li>
         <li>Three</li>
       </ul>
+
+      <section class="first">
+        <h1 class="title">This is my first section</h1>
+        <p class="title">This is my first paragraph</p>
+      </section>
+      <section class="second">
+        <h1>This is my first section</h1>
+        <p>This is my first paragraph</p>
+      </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
-      let ahsan = {
+      /*let ahsan = {
         name: "Ahsan",
         id: 180119,
         reg: 101792,
@@ -32,6 +41,12 @@
           console.log(time, "Porte Boshte Hbe");
         },
       };
+      */
+
+      const places = document.getElementsByClassName("title");
+      for (const place of places) {
+        console.log(place.innerText);
+      }
     </script>
   </body>
 </html>
